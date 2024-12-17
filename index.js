@@ -8,6 +8,9 @@ const Table = document.querySelector(".Table");
 const Table_body = document.querySelector("tbody");
 
 const Error_ = document.querySelector(".error");
+
+const Form = document.querySelector("form");
+
 let Final_Total;
 
 let Table_Row;
@@ -75,6 +78,7 @@ Add.addEventListener("click", (e)=>{
     }else{
         Table.style.display = "block"
         Shopping_cart();
+        Form.reset();
     }
     
 })
