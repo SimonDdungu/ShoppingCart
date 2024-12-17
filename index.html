@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="author" content="Simon Ddungu">
+    <meta name="description" content="Shopping Cart Project developed in vanilla Javascript">
+    <meta name="keywords" content="Shopping Cart Project, Shopping Cart, Supermarket Project">
+
+    <!--FAV ICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Supermarket Shopping</title>
+</head>
+
+
+<body>
+    
+    <div class="ALL">
+
+        <h1>SUPERMARKET SHOPPING</h1>
+
+        <div class="main">
+            <h3>Enter Your Shopping Cart</h4>
+            <form action="">
+                <label for="Name"><b>Name:</b></label>
+                <input type="text" class="Name" name="Name">
+    
+                <label for="Quantity"><b>Quantity:</b></label>
+                <input type="text" class="Quantity" name="Quantity" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+    
+                <label for="Price"><b>Unit Price:</b></label>
+                <input type="text" name="Price" class="UnitPrice" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                <button class="Add">Add</button>
+            </form>
+    
+            <span class="error"></span>
+        </div>
+    
+        <span></span>
+        <div class="Table" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+    
+                </tbody>
+            </table>
+    
+            <div class="Total">
+                <span><strong>Grand Total:</strong></span>
+                <span class="Grand_Total"></span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

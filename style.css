@@ -1,0 +1,151 @@
+html{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    overflow-x: hidden;
+}
+.ALL{
+    width: max-content;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.main{
+    height: 112px;
+    padding-left: 50px;
+}
+
+.ALL > h1{
+    padding: 0 5px;
+    text-align: center;
+    color: rgb(179, 2, 2);
+}
+
+.main form input{
+    outline: none;
+    border: 1px solid black;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.Quantity{
+    width: 50px;
+    text-align: center;
+}
+.UnitPrice{
+    width: 100px;
+}
+
+.Add{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(179, 2, 2);
+    color: white;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.Add:active{
+    background-color: rgb(70, 1, 1);
+}
+
+
+@media(hover: hover){
+    .Add:hover{
+        background-color: rgb(110, 1, 1);
+    }
+}
+
+
+
+
+
+.Table{
+    width: max-content;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%; 
+}
+thead tr{
+    background-color: rgb(179, 2, 2);
+    color: white;
+    border: 1px solid rgb(179, 2, 2);
+    
+}
+thead tr th{
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+tbody tr{
+    background-color: rgb(215, 215, 215);
+    border: 1px solid rgb(179, 2, 2);
+}
+tbody tr td{
+    padding: 5px 10px;
+}
+tbody tr td:is(:nth-child(2), :nth-child(3), :nth-child(4)){
+    text-align: center;
+}
+
+.Total{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error{
+    display: block;
+    margin-top: 20px;
+    color: rgb(179, 2, 2);
+    font-size: 1rem;
+}
+
+
+@media(max-width: 450px){
+    .ALL{
+        width: 100%;
+        margin: 0;
+    }
+    .main{
+        box-sizing: border-box;
+        height: 290px;
+        padding-left: 10px;
+    }
+    .Name{
+        width: 150px;
+    }
+    .Add{
+        width: 100px;
+        margin-top: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        margin: 5px 0;
+    }
+    .Table{
+        margin-top: 30px;
+        width: 95%;
+        padding: 0 10px;
+    }
+    .Table table thead tr th{
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    .Table table tbody tr td{
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+}
