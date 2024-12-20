@@ -40,7 +40,7 @@ body{
     width: 100px;
 }
 
-.Add{
+.Add, .Reset{
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
@@ -52,7 +52,13 @@ body{
 .Add:active{
     background-color: rgb(70, 1, 1);
 }
-
+.Reset{
+    background-color: rgb(215, 215, 215);
+    color: black;
+}
+.Reset:active{
+    background-color: rgb(151, 151, 151);
+}
 
 @media(hover: hover){
     .Add:hover{
@@ -124,7 +130,7 @@ tbody tr td:is(:nth-child(2), :nth-child(3), :nth-child(4)){
     .Name{
         width: 150px;
     }
-    .Add{
+    .Add, .Reset{
         width: 100px;
         margin-top: 10px;
     }

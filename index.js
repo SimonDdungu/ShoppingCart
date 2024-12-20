@@ -3,6 +3,7 @@ let Quantity;
 let Price;
 const Total = document.querySelector(".Total");
 const Add = document.querySelector(".Add");
+const Reset = document.querySelector(".Reset");
 const Grand_Total = document.querySelector(".Grand_Total");
 const Table = document.querySelector(".Table");
 const Table_body = document.querySelector("tbody");
@@ -81,4 +82,11 @@ Add.addEventListener("click", (e)=>{
         Form.reset();
     }
     
+})
+Reset.addEventListener("click", (e) => {
+    e.preventDefault();
+    Form.reset();
+    Item = [];
+    Table.style.display = "none"
+    Table_body.innerHTML = "";
 })
